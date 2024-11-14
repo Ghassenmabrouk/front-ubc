@@ -232,12 +232,17 @@ body, html {
 
 .export-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between items */
+  grid-template-columns: repeat(3, 1fr); /* Always 3 items per row */
+  gap: 16px; /* Space between items */
+  padding: 16px;
+  justify-items: center; /* Center grid items horizontally */
+  align-items: center; /* Center grid items vertically */
 }
 
 .export-item {
   position: relative;
+  width: 100%;
+  padding-top: 100%; /* Maintain square aspect ratio */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -246,11 +251,28 @@ body, html {
 
 /* Ensuring square images */
 .export-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  aspect-ratio: 1 / 1; /* Makes the image a square */
-  object-fit: cover; /* Ensures the image covers the square without distortion */
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
   border-radius: 10px; /* Optional: Rounded corners */
 }
+
+/* Force the grid to always show 3 items per row on smaller screens */
+@media (max-width: 768px) {
+  .export-container {
+    grid-template-columns: repeat(3, 1fr); /* Still 3 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .export-container {
+    grid-template-columns: repeat(3, 1fr); /* Still 3 items per row */
+  }
+}
+
 
 /* Overlay for Titles and Buttons */
 .export-overlay {
