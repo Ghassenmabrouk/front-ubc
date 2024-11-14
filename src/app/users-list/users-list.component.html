@@ -1,0 +1,93 @@
+<div class="user-list-container">
+  <h1>Users</h1>
+  <div class="count-container">
+    <p class="count admin-count">Total Admins: {{ adminCount }}</p>
+    <p class="count technicien-count">Total moderators: {{ technicienCount }}</p>
+    <p class="count user-count">Total Users: {{ userCount }}</p>
+  </div>
+  <div class="search-container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search users" class="search-input" (keyup)="onSearchChange()">
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Role</th>
+        <th>VIP Access</th> <!-- Added VIP Access column -->
+        <th>Password</th>
+        <th>Temporary Password</th>
+        <th>Email Confirmed</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <ng-container *ngIf="editingEmail !== user.email">
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phoneNumber }}</td>
+          <td>{{ user.role }}</td>
+          <td>{{ user.vipAccess ? 'Yes' : 'No' }}</td> <!-- Display VIP Access status -->
+          <td><p>*************</p></td>
+          <td>{{ user.tempPassword }}</td>
+          <td>{{ user.emailConfirmed ? 'Yes' : 'No' }}</td>
+          <td>
+            <button *ngIf="!user.isBanned" (click)="banUserByEmail(user.email)" class="ban-button">
+              <img src="assets/icons/ban.png" alt="Ban" class="icon">
+            </button>
+            
+            <button *ngIf="user.isBanned" (click)="unbanUserByEmail(user.email)" class="unban-button">
+              <img src="assets/icons/stop.png" alt="Unban" class="icon">
+            </button>
+            
+            <button (click)="deleteUser(user.email)" class="delete-button">
+              <img src="assets/icons/userd.png" alt="Delete" class="icon">
+            </button>
+            
+            <button (click)="enableEditing(user)" class="modify-button">
+              <img src="assets/icons/editd.png" alt="Modify" class="icon">
+            </button>
+          </td>
+        </ng-container>
+        <ng-container *ngIf="editingEmail === user.email">
+          <td><input [(ngModel)]="user.firstName" [ngModelOptions]="{standalone: true}" /></td>
+          <td><input [(ngModel)]="user.lastName" [ngModelOptions]="{standalone: true}" /></td>
+          <td><input [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" /></td>
+          <td>{{ user.email }}</td>
+          <td><input [(ngModel)]="user.phoneNumber" [ngModelOptions]="{standalone: true}" /></td>
+          <td>
+            <select [(ngModel)]="user.role" [ngModelOptions]="{standalone: true}">
+              <option value="admin">Admin</option>
+              <option value="moderator">moderator</option>
+              <option value="user">User</option>
+            </select>
+          </td>
+          <td>
+            <select [(ngModel)]="user.vipAccess" [ngModelOptions]="{standalone: true}"> <!-- Editable VIP Access -->
+              <option [ngValue]="true">Yes</option>
+              <option [ngValue]="false">No</option>
+            </select>
+          </td>
+          <td><input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" /></td>
+          <td><input [(ngModel)]="user.tempPassword" [ngModelOptions]="{standalone: true}" /></td>
+          <td>
+            <select [(ngModel)]="user.emailConfirmed" [ngModelOptions]="{standalone: true}">
+              <option [ngValue]="true">Yes</option>
+              <option [ngValue]="false">No</option>
+            </select>
+          </td>
+          <td>
+            <button (click)="saveChanges(user)" class="save-button">Save</button>
+            <button (click)="cancelEditing()" class="cancel-button">Cancel</button>
+          </td>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>
+</div>

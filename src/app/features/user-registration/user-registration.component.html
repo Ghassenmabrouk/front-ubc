@@ -1,0 +1,63 @@
+<div class="wrapper" style="background-image: url('../../../assets/musim.jpg');">
+  <div class="inner">
+    <div class="image-holder">
+      <img src="../../../assets/kalifa.jpg" alt="Image">
+    </div>
+    <form (ngSubmit)="onSubmit()">
+      <h3>{{ 'REGISTER.TITLE' | translate }}</h3>
+      
+      <!-- First Name and Last Name Fields -->
+      <div class="form-group">
+        <input type="text" [(ngModel)]="user.firstName" name="firstName" placeholder="{{ 'REGISTER.FIRST_NAME_PLACEHOLDER' | translate }}" class="form-control" required>
+        <input type="text" [(ngModel)]="user.lastName" name="lastName" placeholder="{{ 'REGISTER.LAST_NAME_PLACEHOLDER' | translate }}" class="form-control" required>
+      </div>
+      
+      <!-- Username Field -->
+      <div class="form-wrapper">
+        <input type="text" [(ngModel)]="user.username" name="username" placeholder="{{ 'REGISTER.USERNAME_PLACEHOLDER' | translate }}" class="form-control" required>
+        <i class="zmdi zmdi-account"></i>
+      </div>
+      
+      <!-- Email Field -->
+      <div class="form-wrapper">
+        <input type="email" [(ngModel)]="user.email" name="email" placeholder="{{ 'REGISTER.EMAIL_PLACEHOLDER' | translate }}" class="form-control" required>
+        <i class="zmdi zmdi-email"></i>
+      </div>
+      
+      <!-- Gender Selection -->
+      <div class="form-wrapper">
+        <select [(ngModel)]="user.gender" name="gender" class="form-control" required>
+          <option value="" disabled selected>{{ 'REGISTER.GENDER_PLACEHOLDER' | translate }}</option>
+          <option value="male">{{ 'REGISTER.GENDER_OPTIONS.MALE' | translate }}</option>
+          <option value="female">{{ 'REGISTER.GENDER_OPTIONS.FEMALE' | translate }}</option>
+          <option value="not specified">{{ 'REGISTER.GENDER_OPTIONS.NOT_SPECIFIED' | translate }}</option>
+        </select>
+        <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+      </div>
+      
+      <!-- Phone Number Field -->
+      <div class="form-wrapper">
+        <input type="text" [(ngModel)]="user.phoneNumber" name="phoneNumber" placeholder="{{ 'REGISTER.PHONE_PLACEHOLDER' | translate }}" class="form-control" required>
+        <i class="zmdi zmdi-phone"></i>
+      </div>
+      
+      <!-- Password Field -->
+      <div class="form-wrapper">
+        <input type="password" [(ngModel)]="user.password" name="password" placeholder="{{ 'REGISTER.PASSWORD_PLACEHOLDER' | translate }}" class="form-control" required>
+        <i class="zmdi zmdi-lock"></i>
+      </div>
+      
+      <!-- Confirm Password Field -->
+      <div class="form-wrapper">
+        <input type="password" [(ngModel)]="user.confirmPassword" name="confirmPassword" placeholder="{{ 'REGISTER.CONFIRM_PASSWORD_PLACEHOLDER' | translate }}" class="form-control" required>
+        <i class="zmdi zmdi-lock"></i>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">
+        {{ 'REGISTER.REGISTER_BUTTON' | translate }}
+        <i class="zmdi zmdi-arrow-right"></i>
+      </button>
+    </form>
+  </div>
+</div>

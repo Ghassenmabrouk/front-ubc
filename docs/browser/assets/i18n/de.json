@@ -1,0 +1,65 @@
+{
+    "HOME": "Startseite",
+    "ABOUT": "Über uns",
+    "SERVICES": "Dienstleistungen",
+    "CONTACT_LABEL": "Kontakt", 
+    "WELCOME_MESSAGE": "Willkommen auf unserer Seite!",
+    "HERO": {
+      "LOCATION": "Dubai",
+      "HURRY": "EILE!",
+      "CAROUSEL": "Karussell Indikator",
+      "APARTMENT_SEA_VIEW": "Wohnung mit Meerblick"
+    },
+    "FEATURED": "| VORGESTELLT",
+    "SOON": "bald",
+    "BEST_USEFUL_LINKS": "Beste nützliche Links?",
+    "GET_BUSINESS": "Holen Sie sich das <strong>Geschäft</strong>, dem Sie bei UBC angehören möchten",
+    "HOW_IT_WORKS": "Wie funktioniert das?",
+    "WHY_UBC_BEST": "Warum ist UBC das Beste?",
+    "WAITING": "wartend...",
+    "BEST_DEAL": "| BESTES ANGEBOT",
+    "FIND_BEST_DEAL": "Finden Sie jetzt Ihr bestes Angebot!",
+    "EXTRA_INFO": "Zusätzliche Informationen über uns",
+    "VISIT": "besuchen",
+    "CONTACT_SECTION": {  
+      "SECTION_TITLE": "Nehmen Sie Kontakt mit unseren Agenten auf",
+      "FULL_NAME": "Vollständiger Name",
+      "FULL_NAME_PLACEHOLDER": "Ihr Name...",
+      "EMAIL": "E-Mail-Adresse",
+      "EMAIL_PLACEHOLDER": "Ihre E-Mail...",
+      "SUBJECT": "Betreff",
+      "SUBJECT_PLACEHOLDER": "Betreff...",
+      "MESSAGE": "Nachricht",
+      "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+      "SEND_MESSAGE": "Nachricht senden",
+      "PHONE": "010-020-0340",
+      "EMAIL_ADDRESS": "infovilla.co"
+    },
+    "LOGIN": {
+      "TITLE": "Anmelden",
+      "EMAIL_PLACEHOLDER": "E-Mail Adresse",
+      "PASSWORD_PLACEHOLDER": "Passwort",
+      "FORGOT_PASSWORD": "Passwort vergessen?",
+      "LOGIN_BUTTON": "Einloggen",
+      "SIGNUP_LINK": "Haben Sie noch kein Konto?",
+      "SIGNUP": "Registrieren"
+    },
+    "REGISTER": {
+      "TITLE": "Registrierungsformular",
+      "FIRST_NAME_PLACEHOLDER": "Vorname",
+      "LAST_NAME_PLACEHOLDER": "Nachname",
+      "USERNAME_PLACEHOLDER": "Benutzername",
+      "EMAIL_PLACEHOLDER": "E-Mail Adresse",
+      "GENDER_PLACEHOLDER": "Geschlecht",
+      "GENDER_OPTIONS": {
+        "MALE": "Männlich",
+        "FEMALE": "Weiblich",
+        "NOT_SPECIFIED": "Nicht angegeben"
+      },
+      "PHONE_PLACEHOLDER": "Telefonnummer",
+      "PASSWORD_PLACEHOLDER": "Passwort",
+      "CONFIRM_PASSWORD_PLACEHOLDER": "Passwort bestätigen",
+      "REGISTER_BUTTON": "Registrieren"
+    }
+  }
+  

@@ -1,0 +1,126 @@
+/* Basic styling and positioning for the preloader */
+.preload-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/bg1.jpg') no-repeat center center/cover; 
+    z-index: 1000;
+    overflow: hidden;
+    transition: opacity 1s ease-out;
+  }
+  
+  .preload-wrapper.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader img {
+    width: 790px;
+    animation: fade 4s forwards;
+  }
+  
+  /* Keyframes for fading the UBC logo */
+  @keyframes fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  .fade-image {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200%;
+    max-height: 150%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  #cityImage {
+    animation: fadeImage 4s forwards 4s; /* Starts after 4 seconds */
+  }
+  
+  #businessImage {
+    animation: fadeImage 4s forwards 8s; /* Starts after 10 seconds */
+  }
+  
+
+  #countriesImage {
+    animation: fadeImage 10s forwards 7s; /* Starts after 16 seconds */
+  }
+  @keyframes fadeImage {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .loader img {
+    width: 790px;
+    animation: fadeLogo 4s forwards;
+  }
+  
+  @keyframes fadeLogo {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  .preload-wrapper.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .floating-balls {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .floating-balls.second {
+    animation-delay: 1s;
+  }
+  
+  .floating-balls.third {
+    animation-delay: 2s;
+  }
+  
+  .floating-balls.fourth {
+    animation-delay: 3s;
+  }
+  
+  .floating-balls.fifth {
+    animation-delay: 4s;
+  }
+  
+  /* Keyframes for floating balls animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

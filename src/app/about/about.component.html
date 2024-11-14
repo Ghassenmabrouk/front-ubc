@@ -1,0 +1,179 @@
+<!-- About Us Page -->
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>{{ 'HERO_TITLE_ABOUT' | translate }}</h1>
+    <div class="button-wrapper">
+      <button class="button-71" role="button">{{ 'LEARN_MORE_BUTTON' | translate }}</button>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="intro-section">
+  <div class="intro-content">
+    <h2 class="intro-title">{{ 'INTRO_TITLE_JOURNEY' | translate }}</h2>
+    <h3 class="section-heading">{{ 'SECTION_HEADING_LEADING' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'INTRO_PARAGRAPH_1_ABOUT' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore1}">
+      {{ 'INTRO_PARAGRAPH_2_ABOUT' | translate }}
+    </p>
+    <button class="read-more">
+      <ng-container *ngIf="showMore1; else showMoreText">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+<!-- Our Mission Section -->
+<section class="vision-section">
+  <div class="vision-content">
+    <h3 class="section-heading">{{ 'SECTION_HEADING_MISSION' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'MISSION_PARAGRAPH_1' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore2}">
+      {{ 'MISSION_PARAGRAPH_2' | translate }}
+    </p>
+    <button class="read-more">
+      <ng-container *ngIf="showMore1; else showMoreText">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+<!-- Export Section -->
+<section class="export-section">
+  <div class="export-container">
+    <!-- Integrity -->
+    <div class="export-item">
+      <img src="../../assets/about/int.jpg" alt="{{ 'EXPORT_TITLE_INTEGRITY' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_INTEGRITY' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_INTEGRITY' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Innovation -->
+    <div class="export-item">
+      <img src="../../assets/about/innovation.jpg" alt="{{ 'EXPORT_TITLE_INNOVATION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_INNOVATION' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_INNOVATION' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Excellence -->
+    <div class="export-item">
+      <img src="../../assets/about/exe.jpg" alt="{{ 'EXPORT_TITLE_EXCELLENCE' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_EXCELLENCE' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_EXCELLENCE' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Air Cargo -->
+    <div class="export-item">
+      <img src="../../assets/about/plane.jpg" alt="{{ 'EXPORT_TITLE_AIR_CARGO' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_AIR_CARGO' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_AIR_CARGO' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Sea Cargo -->
+    <div class="export-item">
+      <img src="../../assets/about/cargo.jpg" alt="{{ 'EXPORT_TITLE_SEA_CARGO' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_SEA_CARGO' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_SEA_CARGO' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Container Shipping -->
+    <div class="export-item">
+      <img src="../../assets/about/truck.jpg" alt="{{ 'EXPORT_TITLE_CONTAINER_SHIPPING' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EXPORT_TITLE_CONTAINER_SHIPPING' | translate }}</h3>
+        <p class="export-description">{{ 'EXPORT_DESCRIPTION_CONTAINER_SHIPPING' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="vision-section">
+  <div class="vision-container">
+    <div class="vision-text">
+      <h2 class="vision-title">{{ 'VISION_TITLE_TEAM' | translate }}</h2>
+      <p class="vision-description">
+        {{ 'VISION_DESCRIPTION_TEAM' | translate }}
+      </p>
+      <div class="read-more-btn-wrapper">
+        <button class="read-more-btn">{{ 'READ_MORE' | translate }} &rarr;</button>
+      </div>
+      <hr class="text-divider" />
+      <div class="contact-info">
+        <p><i class="fas fa-phone-alt"></i> {{ 'CONTACT_OUR_TEAM' | translate }}</p>
+        <p><strong>+971 505272634 </strong></p>
+        <p><strong>+971 505272634</strong></p>
+        <p><strong>+971 505272634</strong></p>
+      </div>
+    </div>
+    <div class="vision-image">
+      <img src="../../assets/about/team.jpg" alt="Team Image" />
+    </div>
+  </div>
+</section>
+
+<!-- History Section -->
+<section class="consultation-section">
+  <div class="consultation-content">
+    <h2 class="consultation-title">{{ 'HISTORY_TITLE' | translate }}</h2>
+    <hr class="title-divider" />
+    <p class="consultation-description">
+      {{ 'HISTORY_DESCRIPTION' | translate }}
+    </p>
+    <button class="get-in-touch-btn">{{ 'LEARN_MORE_BUTTON_HISTORY' | translate }} &rarr;</button>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="expertise-section">
+  <div class="expertise-container">
+    <div class="intro-text">
+      <h2 class="intro-title">{{ 'CONTACT_US_TITLE' | translate }}</h2>
+      <hr class="title-divider" />
+      <p class="intro-description">
+        {{ 'CONTACT_US_DESCRIPTION' | translate }}
+      </p>
+    </div>
+    <div class="bottom-container">
+      <div class="image-container">
+        <img src="../../assets/about/contact.jpg" alt="Contact Image" class="service-image" />
+      </div>
+      <div class="services-section">
+        <h3 class="services-title">{{ 'GET_IN_TOUCH_TITLE' | translate }}</h3>
+        <hr class="services-divider" />
+        <ul class="service-list">
+          <li><i class="fas fa-envelope"></i> <strong>{{ 'EMAIL_LABEL' | translate }}</strong> info&#64;ubc.com</li>
+          <li><i class="fas fa-phone"></i> <strong>{{ 'PHONE_LABEL' | translate }}</strong> +971 505272634</li>
+          <li><i class="fas fa-map-marker-alt"></i> <strong>{{ 'ADDRESS_LABEL' | translate }}</strong> Dubai, UAE</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

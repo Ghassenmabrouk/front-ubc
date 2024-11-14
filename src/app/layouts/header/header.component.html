@@ -1,0 +1,107 @@
+<header>
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="contact-info">
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          info&#64;OfficeUBC.com
+        </div>
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+      </div>
+     
+  
+
+      <!-- User Dropdown -->
+      <div class="user-dropdown-container" *ngIf="userName">
+        <div class="user-dropdown">
+          <span class="welcome-message">Welcome,</span> 
+          <span class="user-name">{{ userName }}</span>
+          <div class="dropdown-content">
+            <a routerLink="/edit">Profile</a>
+            <a [routerLink]="isVip ? '/vip' : '/subscription'">VIP Zone</a>
+            <a (click)="logout()">Logout</a>
+          </div>
+        </div>
+      </div>
+          <!-- Cart Icon -->
+           <!--
+          <a (click)="toggleCart()" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge">{{ cartItemCount }}</span>
+          </a>-->
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/newlogo2.png" alt="Logo" class="logo-image">
+      
+    </div>
+    
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">{{ 'HOME' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active-link">{{ 'ABOUT' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/services" routerLinkActive="active-link">{{ 'SERVICES' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active-link">{{ 'CONTACT_LABEL' | translate }}</a>
+        </li>
+        <li *ngIf="!userName">
+          <a routerLink="/login" class="login-link">{{ 'SIGN_IN' | translate }}</a>
+        </li>
+        <!--<li>
+          <a routerLink="/shop" routerLinkActive="active-link">{{ 'SHOP_LABEL' | translate }}</a>
+        </li> -->
+        <li>
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <select id="language-select" (change)="switchLanguage($event)">
+              <option value="en">English</option>
+              <option value="ar">عربي</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sliding Cart Content -->
+   <!--
+  <div class="cart-panel" [ngClass]="{'open': isCartOpen}">
+    <div class="cart-panel-header">
+      <h3>Your Cart</h3>
+      <button (click)="toggleCart()">Close</button>
+    </div>
+    <div class="cart-panel-content">
+      <div *ngIf="cartItemCount > 0; else emptyCart">
+        <div class="cart-item" *ngFor="let item of cartService.cartItems$ | async" style="position: relative;">
+          <img [src]="item.imageUrl" alt="{{item.name}}">
+          <div class="cart-item-details">
+            <p>{{ item.name }}</p>
+            <p>{{ item.price | currency }} x {{ item.quantity }}</p>
+          
+        
+            <button class="remove-icon-btn" (click)="cartService.removeFromCart(item)">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <h4>Total: {{ cartService.getTotalPrice() | currency }}</h4>
+          <button routerLink="/checkout">Checkout</button>
+        </div>
+      </div>
+      <ng-template #emptyCart>
+        <p>Your cart is empty.</p>
+      </ng-template>
+    </div>
+  </div>-->
+</header>

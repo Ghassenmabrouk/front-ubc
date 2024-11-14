@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/add-product",
+    "/contact",
+    "/login",
+    "/product",
+    "/register",
+    "/services",
+    "/shop",
+    "/userslist"
+  ]
+}

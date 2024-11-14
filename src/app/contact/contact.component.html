@@ -1,0 +1,64 @@
+<!-- contact.component.html -->
+<section class="contact-hero-section">
+  <div class="contact-hero-content">
+    <h1>{{ 'CONTACT_US' | translate }}</h1>
+    <p>{{ 'CONTACT_US_DESCRIPTION' | translate }}</p>
+  </div>
+</section>
+
+<section class="contact-info-section">
+  <div class="contact-info-container">
+    <div class="contact-details">
+      <h2>{{ 'CONTACT_INFORMATION' | translate }}</h2>
+      <p class="contact-paragraph">
+        {{ 'CONTACT_INFORMATION_DESCRIPTION' | translate }}
+      </p>
+      <ul class="contact-list">
+        <li><i class="fas fa-map-marker-alt"></i> {{ 'CONTACT_ADDRESS' | translate }}</li>
+        <li><i class="fas fa-phone-alt"></i>Head Office Dubai: +971 505272634</li>
+        <li><i class="fas fa-phone-alt"></i>Vienna Office   : +43 68864877031</li>
+        <li><i class="fas fa-phone-alt"></i>Milan Office    : +39 3313306519</li>
+        <li><i class="fas fa-envelope"></i> office&#64;ubcgt.com</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h2>{{ 'SEND_MESSAGE' | translate }}</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">{{ 'NAME' | translate }}</label>
+          <input id="name" formControlName="name" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">{{ 'EMAIL' | translate }}</label>
+          <input id="email" formControlName="email" type="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message">{{ 'MESSAGE' | translate }}</label>
+          <textarea id="message" formControlName="message" class="form-control" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <div class="recaptcha-container">
+           
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">{{ 'SUBMIT' | translate }}</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <h2>{{ 'FIND_US_HERE' | translate }}</h2>
+  <div class="map-container">
+    <!-- Embed Google Maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.874109814072!2d55.27078231500392!3d25.20484998387366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434e02d7d987%3A0xb5b58eaf4c9ee8e3!2sDubai%20Mall!5e0!3m2!1sen!2sae!4v1615373793613!5m2!1sen!2sae"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>

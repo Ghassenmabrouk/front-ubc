@@ -1,0 +1,260 @@
+.user-list-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-list-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  table thead {
+    background-color: #673ab7;
+    color: white;
+  }
+  
+  table th,
+  table td {
+    text-align: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+    
+    /* For email confirmed indicator */
+    .confirmed-yes {
+      color: green;
+    }
+    
+    .confirmed-no {
+      color: red;
+    }
+    .green-snackbar {
+      background-color: #4CAF50; /* Green background */
+      color: #ffffff; /* White text */
+    }
+    /* Ban Button Styles */
+  .ban-button {
+    color: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; /* Add this line */
+  
+  }
+  
+  .ban-button:hover {
+    background-color: #c9302c; /* A slightly darker shade for hover effect */
+  }
+  
+  /* Unban Button Styles */
+  .unban-button {
+    color: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; /* Add this line */
+  
+  }
+  
+  .unban-button:hover {
+    background-color: #4cae4c; /* A slightly darker shade for hover effect */
+  }
+  /* Delete Button Styles */
+  .delete-button {
+    color: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; /* Add this line */
+  
+  }
+  
+  .delete-button:hover {
+    background-color: #c9302c; /* A darker shade of red for hover effect */
+  }
+  
+  /* Modify Button Styles */
+  .modify-button {
+    color: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; /* Add this line */
+  
+  }
+  
+  .modify-button:hover {
+    background-color: #31b0d5; /* A darker shade of blue for hover effect */
+  }
+  .actions-container {
+    display: flex; /* Aligns children (buttons) inline */
+    justify-content: center; /* Centers the buttons within the container */
+    gap: 10px; /* Adjusts space between each button */
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Style for your buttons */
+  button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Differentiate the Save button with a color indicating action */
+  button.save-button {
+    background-color: #4CAF50; /* A nice green */
+    color: white;
+  }
+  
+  button.save-button:hover {
+    background-color: #45a049; /* A darker green on hover */
+  }
+  
+  /* Style the Cancel button with a neutral or alert color */
+  button.cancel-button {
+    background-color: #f44336; /* A bright red */
+    color: white;
+  }
+  
+  button.cancel-button:hover {
+    background-color: #d32f2f; /* A darker red on hover */
+  }
+  .icon {
+    width: 33px; /* Adjust the width as needed */
+    height: 33px; /* Adjust the height as needed */
+  }
+  /* Styling the container for counts */
+  .count-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .count {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .admin-count {
+    background-color: #4caf50; /* Green */
+  }
+  
+  .technicien-count {
+    background-color: #2196f3; /* Blue */
+  }
+  
+  .user-count {
+    background-color: #f44336; /* Red */
+  }
+  .search-container {
+    justify-content: center;
+  
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    justify-content: center;
+  
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+   
+  
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-button:active {
+    background-color: #004080;
+  }

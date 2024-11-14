@@ -1,0 +1,19 @@
+<div class="basket-product" *ngFor="let item of cartItems">
+  <div class="item">
+    <div class="product-image">
+      <img [src]="item.imageUrl" alt="{{item.name}}" class="product-frame">
+    </div>
+    <div class="product-details">
+      <h1><strong><span class="item-quantity">{{item.quantity}}</span> x {{item.name}}</strong></h1>
+      <p>{{item.description}}</p>
+    </div>
+  </div>
+  <div class="price">{{item.price}} {{ item.quantity }}</div>
+  <div class="quantity">
+    <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item)" min="1" class="quantity-field">
+  </div>
+  <div class="subtotal">{{ (item.price * (item.quantity || 0)) | currency }}</div>
+  <button (click)="removeItem(item)" class="remove-icon-btn">
+    <img src="../../assets/goldenX-removebg-preview.png" alt="Remove" class="custom-remove-icon">
+  </button>
+</div>

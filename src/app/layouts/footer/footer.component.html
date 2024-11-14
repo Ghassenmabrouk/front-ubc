@@ -1,0 +1,67 @@
+<footer class="footer-section" [ngClass]="{'rtl': isRtl}">
+  <div class="footer-container">
+    <!-- Logo and Description -->
+    <div class="footer-column">
+      <img src="../../../assets/image_2024-07-31_082006498-removebg.png" alt="UBC Logo" class="footer-logo">
+      <p class="footer-description">
+        {{ 'FOOTER_DESCRIPTION' | translate }}
+      </p>
+    </div>
+    
+    <!-- Links -->
+    <div class="footer-column">
+      <h4>{{ 'OUR_COMPANY' | translate }}</h4>
+      <ul class="footer-links">
+        <li><a href="/about">{{ 'ABOUT_US' | translate }}</a></li>
+        <li><a href="/about">{{ 'MISSION' | translate }}</a></li>
+        <li><a href="/about">{{ 'VISION' | translate }}</a></li>
+      </ul>
+    </div>
+    
+    <!-- Services -->
+    <div class="footer-column">
+      <h4>{{ 'OUR_SERVICES' | translate }}</h4>
+      <ul class="footer-links">
+        <li><a href="/services">{{ 'GENERAL_TRADING' | translate }}</a></li>
+        <li><a href="/services">{{ 'FREIGHT_FORWARDERS' | translate }}</a></li>
+        <li><a href="/services">{{ 'SHIPPING_COMPANY' | translate }}</a></li>
+        <li><a href="/services">{{ 'BEST_FREIGHT_SERVICE' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="footer-column">
+      <h4>{{ 'CONTACT' | translate }}</h4>
+      <ul class="footer-links">
+        <li><a href="/contact">{{ 'CONTACT_US' | translate }}</a></li>
+        <li>
+          <a href="mailto:info@OfficeUBC.com" target="_blank">
+            info&#64;OfficeUBC.com
+          </a>
+        </li>
+     <li>
+  <a href="#">
+    <span dir="ltr">+971 505272634</span>
+  </a>
+</li>
+
+      </ul>
+      <div class="social-media">
+        <a href="mailto:example@example.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.snapchat.com/add/yourprofile" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/yourprofile" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>{{ 'COPYRIGHT' | translate }}</p>
+  </div>
+</footer>

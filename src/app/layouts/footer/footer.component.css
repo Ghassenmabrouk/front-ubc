@@ -1,0 +1,101 @@
+/* Footer Section Styling */
+.footer-section {
+    background-color: #1a1d24; /* Dark background */
+    color: #eaeaea; /* Light text color */
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    margin-bottom: 20px;
+  }
+  
+  .social-media a {
+    color: #ccc; /* Light grey for icons */
+    font-size: 18px; /* Slightly larger icons for mobile */
+    margin-left: 8px; /* Reduce space between icons */
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #ff5a00; /* Orange on hover */
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #caec05; /* Gold color on hover */
+  }
+  
+  .address {
+    font-style: normal;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333; /* Separator line */
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .powered-by {
+    color: #caec05; /* Gold color */
+    text-decoration: none;
+  }
+  
+  .powered-by:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl .footer-column {
+    text-align: right;
+}
+
+.rtl .social-media a {
+    margin-right: 0;
+    margin-left: 15px;
+}

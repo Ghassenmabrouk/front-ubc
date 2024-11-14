@@ -1,0 +1,320 @@
+<section class="hero-section">
+  <div>
+   
+    
+
+
+      <img src="../../assets/vienna4.jpg" alt="Vienna2" class="hero-image" />
+   
+  </div>
+  
+  
+
+  
+  
+</section>
+
+
+<!-- Other Content -->
+<section class="intro-section">
+  <div class="intro-content">
+    <h2 class="intro-title">{{ 'WELCOME_TO' | translate }}</h2>
+    <h3 class="section-heading">{{ 'RELIABLE_TRADING_COMPANY' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'INTRO_PARAGRAPH_1' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore1}">
+      {{ 'INTRO_PARAGRAPH_2' | translate }}
+    </p>
+    <button class="read-more" (click)="toggleReadMore('showMore1')">
+      <ng-container *ngIf="showMore1; else showMoreText1">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText1>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+<section class="vision-section">
+  <div class="vision-content">
+    <h3 class="section-heading">{{ 'VISION_TITLE' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'VISION_PARAGRAPH_1' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore2}">
+      {{ 'VISION_PARAGRAPH_2' | translate }}
+    </p>
+    <button class="read-more" (click)="toggleReadMore('showMore2')">
+      <ng-container *ngIf="showMore2; else showMoreText2">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText2>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+<section class="vision-section">
+  <div class="vision-content">
+    <h3 class="section-heading">{{ 'VISION_TITLE11' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'VISION_PARAGRAPH_3' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore3}">
+      {{ 'VISION_PARAGRAPH_4' | translate }}
+    </p>
+    <button class="read-more" (click)="toggleReadMore('showMore3')">
+      <ng-container *ngIf="showMore3; else showMoreText3">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText3>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+
+<section class="vision-section">
+  <div class="vision-content">
+    <h3 class="section-heading">{{ 'VISION_TITLE111' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'VISION_PARAGRAPH_5' | translate }}
+    </p>
+    <p class="section-paragraph more-content" [ngClass]="{'active': showMore1}">
+      {{ 'VISION_PARAGRAPH_6' | translate }}
+    </p>
+    <button class="read-more" (click)="toggleReadMore1()">
+      <ng-container *ngIf="showMore1; else showMoreText">
+        {{ 'READ_LESS' | translate }}
+      </ng-container>
+      <ng-template #showMoreText>
+        {{ 'READ_MORE' | translate }}
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+
+<section class="export-section">
+  <div class="export-container">
+    <!-- Food Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/gold.jpg" alt="{{ 'FOOD_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'FOOD_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Cars + Parts Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/village.jpg" alt="{{ 'CARS_PARTS_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'CARS_PARTS_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Furniture Design Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/work.jpg" alt="{{ 'FURNITURE_DESIGN_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'FURNITURE_DESIGN_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Gold + Diamond Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/subway.jpg" alt="{{ 'GOLD_DIAMOND_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'GOLD_DIAMOND_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Jewelry Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/tech.jpg" alt="{{ 'JEWELRY_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'JEWELRY_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Construction Material Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/space.jpg" alt="{{ 'CONSTRUCTION_MATERIAL_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'CONSTRUCTION_MATERIAL_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Medical Devices Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/light.jpg" alt="{{ 'MEDICAL_DEVICES_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'MEDICAL_DEVICES_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Cleaning Products Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/lab.jpg" alt="{{ 'CLEANING_PRODUCTS_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'CLEANING_PRODUCTS_DIVISION' | translate }}</h3>
+        <button routerLink="/shop" routerLinkActive="active" class="learn-more-btn">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+    
+    <!-- Events Media Division -->
+    <div class="export-item">
+      <img src="../../assets/dev/agre.jpg" alt="{{ 'EVENTS_MEDIA_DIVISION' | translate }}" class="export-image">
+      <div class="export-overlay">
+        <h3 class="export-title">{{ 'EVENTS_MEDIA_DIVISION' | translate }}</h3>
+        <button class="learn-more-btn" (click)="navigateToShop()">{{ 'START_SHOPPING' | translate }} &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vision-section">
+  <div class="vision-container">
+    <!-- Left Column: Text Content -->
+    <div class="vision-text">
+      <h2 class="vision-title">{{ 'WHERE_WE_BUILD' | translate }}</h2>
+      <p class="vision-description">
+        {{ 'VISIONS_DESCRIPTION' | translate }}
+      </p>
+      <div class="read-more-btn-wrapper">
+        <button class="read-more-btn">{{ 'READ_MORE' | translate }} &rarr;</button>
+      </div>
+
+      <hr class="text-divider" />
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <p><i class="fas fa-phone-alt"></i> {{ 'CALL_US_TODAY' | translate }}</p>
+        <p><strong>+43 68864877031</strong></p>
+       
+      </div>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="vision-image">
+      <img src="../../assets/imgbilding3.jpg" alt="Container Ship" />
+    </div>
+  </div>
+</section>
+
+<section class="consultation-section">
+  <div class="consultation-content">
+    <h2 class="consultation-title">{{ 'FREE_CONSULTATION_TITLE' | translate }}</h2>
+    <hr class="title-divider" />
+    <p class="consultation-description">
+      {{ 'CONSULTATION_DESCRIPTION' | translate }}
+    </p>
+    <button class="get-in-touch-btn">{{ 'GET_IN_TOUCH' | translate }} &rarr;</button>
+  </div>
+</section>
+
+<section class="expertise-section">
+  <div class="expertise-container">
+    <!-- Top Section: Introduction -->
+    <div class="intro-text">
+      <h2 class="intro-title">{{ 'EXPERTISE_TITLE' | translate }}</h2>
+      <hr class="title-divider" />
+      <p class="intro-description">
+        {{ 'EXPERTISE_DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <!-- Bottom Section: Image and Services -->
+    <div class="bottom-container">
+      <!-- Image Section -->
+      <div class="image-container">
+        <img src="../../assets/Picture4.png" alt="Port Image" class="service-image" />
+      </div>
+
+      <!-- Services Section -->
+      <div class="services-section">
+        <h3 class="services-title">{{ 'OUR_SERVICES' | translate }}</h3>
+        <hr class="services-divider" />
+        <p class="services-description">{{ 'OUR_SERVICES' | translate }}</p>
+       <ul class="service-list">
+  <li>
+    <i class="fas fa-utensils"></i> 
+    <strong>{{ 'FOOD_DIVISION' | translate }}:</strong> {{ 'FOOD_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-car"></i> 
+    <strong>{{ 'CARS_PARTS_DIVISION' | translate }}:</strong> {{ 'CARS_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-couch"></i> 
+    <strong>{{ 'FURNITURE_DESIGN_DIVISION' | translate }}:</strong> {{ 'FURNITURE_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-gem"></i> 
+    <strong>{{ 'GOLD_DIAMOND_DIVISION' | translate }}:</strong> {{ 'GOLD_DIAMOND_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-ring"></i> 
+    <strong>{{ 'JEWELRY_DIVISION' | translate }}:</strong> {{ 'JEWELRY_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-hammer"></i> 
+    <strong>{{ 'CONSTRUCTION_MATERIAL_DIVISION' | translate }}:</strong> {{ 'CONSTRUCTION_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-heartbeat"></i> 
+    <strong>{{ 'MEDICAL_DEVICES_DIVISION' | translate }}:</strong> {{ 'MEDICAL_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-pump-soap"></i> 
+    <strong>{{ 'CLEANING_PRODUCTS_DIVISION' | translate }}:</strong> {{ 'CLEANING_PRODUCTS_DESCRIPTION' | translate }}
+  </li>
+  <li>
+    <i class="fas fa-bullhorn"></i> 
+    <strong>{{ 'EVENTS_MEDIA_DIVISION' | translate }}:</strong> {{ 'EVENTS_DESCRIPTION' | translate }}
+  </li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="statistics-section">
+  <div class="statistics-container">
+    <div class="statistics-header">
+      <h2>{{ 'STATISTICS_TITLE' | translate }}</h2>
+      <p>{{ 'STATISTICS_DESCRIPTION' | translate }}</p>
+    </div>
+    <div class="statistics-grid">
+      <div class="statistic-item">
+        <span class="statistic-number">1,321</span>
+        <p class="statistic-label">{{ 'STATISTICS_CLIENTS' | translate }}</p>
+      </div>
+      <div class="statistic-item">
+        <span class="statistic-number">10792</span>
+        <p class="statistic-label">{{ 'STATISTICS_PROJECTS' | translate }}</p>
+      </div>
+      <div class="statistic-item">
+        <span class="statistic-number">423</span>
+        <p class="statistic-label">{{ 'STATISTICS_EMPLOYEES' | translate }}</p>
+      </div>
+      
+    </div>
+  </div>
+</section>

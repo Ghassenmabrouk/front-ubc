@@ -1,0 +1,64 @@
+{
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SERVICES": "Services",
+    "CONTACT_LABEL": "Contact",  
+    "WELCOME_MESSAGE": "Welcome to our site!",
+    "HERO": {
+        "LOCATION": "Dubai",
+        "HURRY": "HURRY!",
+        "CAROUSEL": "Carousel Indicator",
+        "APARTMENT_SEA_VIEW": "Apartment with Sea View"
+    },
+    "FEATURED": "| FEATURED",
+    "SOON": "soon",
+    "BEST_USEFUL_LINKS": "Best useful links?",
+    "GET_BUSINESS": "Get the <strong>business</strong> you want to be a part of UBC",
+    "HOW_IT_WORKS": "How does this work?",
+    "WHY_UBC_BEST": "Why is UBC the best?",
+    "WAITING": "waiting...",
+    "BEST_DEAL": "| BEST DEAL",
+    "FIND_BEST_DEAL": "Find Your Best Deal Right Now!",
+    "EXTRA_INFO": "Extra Info About Us",
+    "VISIT": "visit",
+    "CONTACT_SECTION": {  
+        "SECTION_TITLE": "Get In Touch With Our Agents",
+        "FULL_NAME": "Full Name",
+        "FULL_NAME_PLACEHOLDER": "Your Name...",
+        "EMAIL": "Email Address",
+        "EMAIL_PLACEHOLDER": "Your E-mail...",
+        "SUBJECT": "Subject",
+        "SUBJECT_PLACEHOLDER": "Subject...",
+        "MESSAGE": "Message",
+        "MESSAGE_PLACEHOLDER": "Your Message",
+        "SEND_MESSAGE": "Send Message",
+        "PHONE": "010-020-0340",
+        "EMAIL_ADDRESS": "infovilla.co"
+    },
+    "LOGIN": {
+        "TITLE": "Sign In",
+        "EMAIL_PLACEHOLDER": "Email Address",
+        "PASSWORD_PLACEHOLDER": "Password",
+        "FORGOT_PASSWORD": "Forgot Password?",
+        "LOGIN_BUTTON": "Login",
+        "SIGNUP_LINK": "Don't have an account?",
+        "SIGNUP": "Sign Up"
+    },
+    "REGISTER": {
+        "TITLE": "Registration Form",
+        "FIRST_NAME_PLACEHOLDER": "First Name",
+        "LAST_NAME_PLACEHOLDER": "Last Name",
+        "USERNAME_PLACEHOLDER": "Username",
+        "EMAIL_PLACEHOLDER": "Email Address",
+        "GENDER_PLACEHOLDER": "Gender",
+        "GENDER_OPTIONS": {
+            "MALE": "Male",
+            "FEMALE": "Female",
+            "NOT_SPECIFIED": "Not Specified"
+        },
+        "PHONE_PLACEHOLDER": "Phone Number",
+        "PASSWORD_PLACEHOLDER": "Password",
+        "CONFIRM_PASSWORD_PLACEHOLDER": "Confirm Password",
+        "REGISTER_BUTTON": "Register"
+    }
+}

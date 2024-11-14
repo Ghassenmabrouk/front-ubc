@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 60vh;
+    background: url('../../assets/Picture1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-wrapper .button-71 {
+    background-color: #BF9B30;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .button-wrapper .button-71:hover {
+    background-color: #b69430;
+  }
+  
+  /* Services Overview */
+  .services-overview {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .services-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .services-content .section-heading {
+    font-size: 2rem;
+    color: #1a2343;
+    margin-bottom: 15px;
+  }
+  
+  .services-content .section-paragraph {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Export Section */
+  .export-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+  }
+  
+  .export-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .export-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 30%;
+    max-width: 300px;
+  }
+  
+  .export-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .export-item:hover .export-image {
+    transform: scale(1.1);
+  }
+  
+  .export-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .export-item:hover .export-overlay {
+    opacity: 1;
+  }
+  
+  .export-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .export-description {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .learn-more-btn {
+    padding: 8px 16px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #b69430;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    padding: 50px 20px;
+    background-color: #302f2f;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #b69430;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .export-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .export-item {
+      width: 90%;
+      max-width: none;
+    }
+  }
+  

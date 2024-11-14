@@ -1,0 +1,226 @@
+/* contact.component.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contact Hero Section */
+  .contact-hero-section {
+    position: relative;
+    height: 60vh;
+    background: url('../../assets/bg1.jpg') no-repeat center center fixed; /* Change image as needed */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Information Section */
+  .contact-info-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-details, .contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 45%; /* Adjust width */
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .contact-details h2, .contact-form h2 {
+    font-size: 1.8rem;
+    color: #1a2343;
+    margin-bottom: 15px;
+  }
+  
+  .contact-paragraph {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Center the text */
+    margin: 0 auto; /* Center the list container */
+    display: inline-block; /* Shrink the width to fit content */
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  .contact-list i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #d4af37; /* Optional: Color for the icons */
+  }
+  
+  /* Contact Form Styling */
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    padding: 12px 25px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #b69430;
+  }
+  
+  /* Map Section */
+  .map-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .map-section h2 {
+    font-size: 2rem;
+    color: #1a2343;
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .contact-info-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-details, .contact-form {
+      flex-basis: 100%;
+      max-width: 90%;
+    }
+  }
+  
+
+
+
+  /* contact.component.css */
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #b69430;
+  }
+  
+  .recaptcha-container {
+    display: flex;
+    justify-content: center; /* Centers the widget horizontally */
+    margin-bottom: 20px; /* Adds some space below the widget */
+  }

@@ -1,0 +1,239 @@
+<div class="edit-profile-container">
+  <h2>Edit Profile</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <!-- First Name -->
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        id="firstName"
+        formControlName="firstName"
+        type="text"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('firstName')?.invalid &&
+            profileForm.get('firstName')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('firstName')?.invalid &&
+          profileForm.get('firstName')?.touched
+        "
+        class="invalid-feedback"
+      >
+        First name is required.
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        id="lastName"
+        formControlName="lastName"
+        type="text"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('lastName')?.invalid &&
+            profileForm.get('lastName')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('lastName')?.invalid &&
+          profileForm.get('lastName')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Last name is required.
+      </div>
+    </div>
+
+    <!-- Username -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        id="username"
+        formControlName="username"
+        type="text"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('username')?.invalid &&
+            profileForm.get('username')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('username')?.invalid &&
+          profileForm.get('username')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Username is required and must be at least 2 characters.
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        formControlName="email"
+        type="email"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('email')?.invalid &&
+            profileForm.get('email')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('email')?.invalid &&
+          profileForm.get('email')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Please enter a valid email address.
+      </div>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label>
+      <input
+        id="phoneNumber"
+        formControlName="phoneNumber"
+        type="text"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('phoneNumber')?.invalid &&
+            profileForm.get('phoneNumber')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('phoneNumber')?.invalid &&
+          profileForm.get('phoneNumber')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Please enter a valid phone number.
+      </div>
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select
+        id="gender"
+        formControlName="gender"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('gender')?.invalid &&
+            profileForm.get('gender')?.touched
+        }"
+      >
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="not specified">Not Specified</option>
+      </select>
+      <div
+        *ngIf="
+          profileForm.get('gender')?.invalid &&
+          profileForm.get('gender')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Please select your gender.
+      </div>
+    </div>
+
+    <!-- Current Password -->
+    <div class="form-group">
+      <label for="currentPassword">Current Password</label>
+      <input
+        id="currentPassword"
+        formControlName="currentPassword"
+        type="password"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('currentPassword')?.invalid &&
+            profileForm.get('currentPassword')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('currentPassword')?.invalid &&
+          profileForm.get('currentPassword')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Please enter your current password.
+      </div>
+    </div>
+
+    <!-- New Password -->
+    <div class="form-group">
+      <label for="newPassword">New Password</label>
+      <input
+        id="newPassword"
+        formControlName="newPassword"
+        type="password"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('newPassword')?.invalid &&
+            profileForm.get('newPassword')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.get('newPassword')?.invalid &&
+          profileForm.get('newPassword')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Password must be at least 6 characters long.
+      </div>
+    </div>
+
+    <!-- Confirm New Password -->
+    <div class="form-group">
+      <label for="confirmNewPassword">Confirm New Password</label>
+      <input
+        id="confirmNewPassword"
+        formControlName="confirmNewPassword"
+        type="password"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid':
+            profileForm.get('confirmNewPassword')?.invalid &&
+            profileForm.get('confirmNewPassword')?.touched
+        }"
+      />
+      <div
+        *ngIf="
+          profileForm.hasError('notSame') &&
+          profileForm.get('confirmNewPassword')?.touched
+        "
+        class="invalid-feedback"
+      >
+        Passwords do not match.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="loading">
+      Save Changes
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="cancel()">
+      Cancel
+    </button>
+  </form>
+</div>
