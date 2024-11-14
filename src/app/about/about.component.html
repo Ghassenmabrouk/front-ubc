@@ -1,28 +1,55 @@
-<!-- About Us Page -->
-
-<!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1>{{ 'HERO_TITLE_ABOUT' | translate }}</h1>
+    <h1 class="hero-title">Learn More About Us</h1>
     <div class="button-wrapper">
-      <button class="button-71" role="button">{{ 'LEARN_MORE_BUTTON' | translate }}</button>
+ 
     </div>
   </div>
 </section>
 
+
 <!-- Introduction Section -->
 <section class="intro-section">
   <div class="intro-content">
-    <h2 class="intro-title">{{ 'INTRO_TITLE_JOURNEY' | translate }}</h2>
-    <h3 class="section-heading">{{ 'SECTION_HEADING_LEADING' | translate }}</h3>
+    <h2 class="intro-title">Our Journey</h2>
+    <h3 class="section-heading">Building Strong Bridges Worldwide</h3>
     <p class="section-paragraph">
-      {{ 'INTRO_PARAGRAPH_1_ABOUT' | translate }}
+      United Business Community is an innovative global agency specializing in bilateral relations. Based in Vienna, with representation in Geneva, Brussels, and Tunisia to cover the African continent, our agency builds strong bridges between businesspeople, companies, government institutions, and governments.
     </p>
     <p class="section-paragraph more-content" [ngClass]="{'active': showMore1}">
-      {{ 'INTRO_PARAGRAPH_2_ABOUT' | translate }}
+      Under the leadership of <span class="glowing-text">Dkfm. Adnan Brahim</span>, we are committed to opening new business horizons by offering projects, natural resources, investments, and development initiatives across various sectors, including scientific and technological research. Our journey is driven by a dedication to excellence, innovation, and creating impactful partnerships.
     </p>
-    <button class="read-more">
+    <button class="read-more" (click)="toggleReadMore('showMore1')">
       <ng-container *ngIf="showMore1; else showMoreText">
+        Read Less
+      </ng-container>
+      <ng-template #showMoreText>
+        Read More
+      </ng-template>
+    </button>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+
+<section class="vision-section">
+  <div class="vision-content">
+    <h3 class="section-heading">{{ 'SECTION_HEADING_MISSION' | translate }}</h3>
+    <p class="section-paragraph">
+      {{ 'MISSION_PARAGRAPH_INTRO' | translate }}
+    </p>
+    <ul class="section-list" [ngClass]="{'active': showMore2}">
+      <li>{{ 'MISSION_LIST_ITEM_1' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_2' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_3' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_4' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_5' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_6' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_7' | translate }}</li>
+      <li>{{ 'MISSION_LIST_ITEM_9' | translate }}</li>
+    </ul>
+    <button class="read-more" (click)="toggleReadMore('showMore2')">
+      <ng-container *ngIf="showMore2; else showMoreText">
         {{ 'READ_LESS' | translate }}
       </ng-container>
       <ng-template #showMoreText>
@@ -33,27 +60,6 @@
   </div>
 </section>
 
-<!-- Our Mission Section -->
-<section class="vision-section">
-  <div class="vision-content">
-    <h3 class="section-heading">{{ 'SECTION_HEADING_MISSION' | translate }}</h3>
-    <p class="section-paragraph">
-      {{ 'MISSION_PARAGRAPH_1' | translate }}
-    </p>
-    <p class="section-paragraph more-content" [ngClass]="{'active': showMore2}">
-      {{ 'MISSION_PARAGRAPH_2' | translate }}
-    </p>
-    <button class="read-more">
-      <ng-container *ngIf="showMore1; else showMoreText">
-        {{ 'READ_LESS' | translate }}
-      </ng-container>
-      <ng-template #showMoreText>
-        {{ 'READ_MORE' | translate }}
-      </ng-template>
-    </button>
-    <hr class="section-divider" />
-  </div>
-</section>
 
 <!-- Export Section -->
 <section class="export-section">

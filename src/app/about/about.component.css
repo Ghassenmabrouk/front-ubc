@@ -502,3 +502,79 @@ body, html {
     opacity: 1;
   }
   
+  .section-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .section-list.active {
+    max-height: 500px; /* Adjust height based on content */
+  }
+  .section-content {
+    text-align: right; /* Aligns text for Arabic */
+    direction: rtl; /* Sets the direction to Right-To-Left */
+  }
+
+  .glowing-text {
+    color: #ff4500; /* Base fire color (orange-red) */
+    font-weight: bold;
+    animation: fire 1.5s infinite;
+    background: linear-gradient(90deg, #ff4500, #ff8c00, #ffa500, #ff4500);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes fire {
+    0% {
+      background-position: 0% 50%;
+      transform: scale(1);
+    }
+    25% {
+      background-position: 50% 0%;
+      transform: scale(1.02);
+    }
+    50% {
+      background-position: 100% 50%;
+      transform: scale(1.05);
+    }
+    75% {
+      background-position: 50% 100%;
+      transform: scale(1.02);
+    }
+    100% {
+      background-position: 0% 50%;
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+
+
+  .hero-content h1 {
+    color: #d4af37; /* Base gold color */
+    font-weight: bold;
+    font-size: 3rem; /* Adjust as needed */
+    animation: shimmer 3s infinite;
+    background: linear-gradient(90deg, #d4af37, #f0c94c, #ffeb99, #d4af37);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase; /* Optional for a bold look */
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

@@ -51,17 +51,17 @@
     "MISSION": "Mission",
     "VISION": "Vision",
     "OUR_SERVICES": "Our Services",
-    "FREIGHT_FORWARDERS": "Freight forwarders in UAE",
-    "SHIPPING_COMPANY": "Shipping Company in UAE",
-    "BEST_FREIGHT_SERVICE": "Best freight service in Dubai",
+    "FREIGHT_FORWARDERS": "Freight forwarders in Vienna",
+    "SHIPPING_COMPANY": "Shipping Company in Vienna",
+    "BEST_FREIGHT_SERVICE": "Best freight service in Vienna",
     "CONTACT": "Contact",
     "CONTACT_US": "Contact Us",
     "EMAIL": "Email",
     "COPYRIGHT": "Copyright © 2024 UBC",
-    "HERO_TITLE": "Your First Address For Trading in UAE",
+    "HERO_TITLE": "Your First Address For Trading in Vienna",
     "GET_IN_TOUCH": "Get In Touch",
     "WELCOME_TO": "Welcome to",
-    "RELIABLE_TRADING_COMPANY": "The Most Reliable Intercontinontal  Agency In Vienna",
+    "RELIABLE_TRADING_COMPANY": "United Business Community agency in Vienna",
     "INTRO_PARAGRAPH_1": "United Business Community is an innovative global agency specializing in bilateral relations. Based in Vienna, with representation in Geneva, Brussels, and Tunisia to cover the African continent, our agency builds strong bridges between businesspeople, companies, government institutions, and governments. Under the leadership of Dkfm. Adnan Brahim, we are committed to opening new business horizons by offering projects, natural resources, investments, and development initiatives across various sectors, including scientific and technological research.",
     "INTRO_PARAGRAPH_2": "United Business Community is committed to maintaining transparency in all its interactions and ensuring the utmost satisfaction of its partners and members. Our team of experienced professionals excels in managing the complexities of bilateral relations and international legal frameworks, offering tailored solutions to meet the specific needs of our members. We place great emphasis on efficiency and reliability, ensuring that every project, investment, or initiative achieves its objectives within the set deadlines and in compliance with international standards.",
     "READ_MORE": "Read More",
@@ -84,7 +84,7 @@
     "GOLD_DIAMOND_DIVISION": "Transport",
     "JEWELRY_DIVISION": "Communication",       
     "CONSTRUCTION_MATERIAL_DIVISION": "Technologie",
-    "MEDICAL_DEVICES_DIVISION": "Energy",
+    "MEDICAL_DEVICES_DIVISION": "Renouvable Energy",
     "CLEANING_PRODUCTS_DIVISION": "scientific",
     "EVENTS_MEDIA_DIVISION": "Agriculture",
     "WHERE_WE_BUILD": "Where We Build Your Visions",
@@ -103,15 +103,15 @@
     
     "START_SHOPPING": "Oportunity",
 
-        "HERO_TITLE_ABOUT": "About UBC",
-        "LEARN_MORE_BUTTON": "Learn More",
-        "INTRO_TITLE_JOURNEY": "Our Journey",
-        "SECTION_HEADING_LEADING": "Leading the Way in Global Trading",
-        "INTRO_PARAGRAPH_1_ABOUT": "Founded in 2015, UBC has grown from a small local business to a leading trading company in Dubai, UAE. Our commitment to excellence and customer satisfaction has been the cornerstone of our success. We pride ourselves on offering a wide range of services tailored to meet the diverse needs of our clients.",
-        "INTRO_PARAGRAPH_2_ABOUT": "Over the years, we have navigated the complexities of the trading industry, adapting to changes and setting new standards in import/export services. Our experienced team is dedicated to providing efficient, reliable, and transparent solutions to businesses worldwide.",
-        "SECTION_HEADING_MISSION": "Our Mission",
-        "MISSION_PARAGRAPH_1": "At UBC, our mission is to connect businesses across the globe, providing unparalleled trading solutions that drive success. We strive to create long-lasting partnerships with our clients, ensuring that their needs are met with the highest standards of quality and service.",
-        "MISSION_PARAGRAPH_2": "We are committed to sustainability and ethical business practices, working closely with our partners to deliver environmentally friendly solutions. Our focus on innovation and technology sets us apart, enabling us to offer state-of-the-art trading services in an ever-evolving market.",
+    "HERO_TITLE_ABOUT": "Learn More About Us",
+    "LEARN_MORE_BUTTON": "Learn More",
+    "INTRO_TITLE_JOURNEY": "Our Journey",
+    "SECTION_HEADING_LEADING": "Leading Innovation in Your Industry",
+    "INTRO_PARAGRAPH_1_ABOUT": "Since our founding, we have been dedicated to innovation and excellence in everything we do.",
+    "INTRO_PARAGRAPH_2_ABOUT": "Over the years, we have built a trusted reputation, connecting businesses and individuals worldwide.",
+    "SECTION_HEADING_MISSION": "Our Mission",
+  "MISSION_PARAGRAPH_1": "The mission of United Business Community is to ensure successful and sustainable partnerships by coordinating every aspect of the process, from establishing connections to final execution. Our focus includes:",
+    "MISSION_PARAGRAPH_2": "Our mission is rooted in trust, innovation, and a commitment to meeting our clients' needs.",
         "EXPORT_TITLE_INTEGRITY": "Integrity",
         "EXPORT_DESCRIPTION_INTEGRITY": "We uphold the highest standards of integrity in all our actions.",
         "EXPORT_TITLE_INNOVATION": "Innovation",
@@ -128,7 +128,7 @@
         "VISION_DESCRIPTION_TEAM": "Our team of professionals is the backbone of our company. With a wealth of experience and expertise, our team members are committed to delivering the best trading solutions and ensuring client satisfaction.",
         "CONTACT_OUR_TEAM": "Contact Our Team",
         "HISTORY_TITLE": "Our History",
-        "HISTORY_DESCRIPTION": "From our humble beginnings in 2015, UBC has grown into a renowned trading company. Our journey has been marked by innovation, growth, and a relentless pursuit of excellence. We've overcome numerous challenges, emerging stronger and more resilient each year. Join us as we continue to pave the way for global trade and make our mark in the industry.",
+        "HISTORY_DESCRIPTION": "From our humble beginnings in 2015, UBC has grown into a renowned trading company. Our journey has been marked by innovation, growth, and a relentless pursuit of excellence. We've overcome numerous challenges, emerging stronger and more resilient each year. Join us as we continue to pave the way and make our mark in the industry.",
         "LEARN_MORE_BUTTON_HISTORY": "Learn More",
         "CONTACT_US_TITLE": "Contact Us",
         "CONTACT_US_DESCRIPTION": "We'd love to hear from you! Whether you're looking for more information about our services or have specific inquiries, our team is here to help. Reach out to us through any of the contact methods listed below.",
@@ -164,15 +164,37 @@
         
         "CONTACT_INFORMATION": "Contact Information",
         "CONTACT_INFORMATION_DESCRIPTION": "We are here to assist you with any inquiries you might have. Feel free to reach out to us through any of the methods below.",
-        "CONTACT_ADDRESS": "123 Business Street, Dubai, UAE",
+        "CONTACT_ADDRESS": "Vienna",
         "SEND_MESSAGE": "Send Us a Message",
         "NAME": "Name",
         
         "MESSAGE": "Message",
         "SUBMIT": "Submit",
-        "FIND_US_HERE": "Find Us Here"
+        "FIND_US_HERE": "Find Us Here",
        
       
-  }
+
+"MISSION_LIST_ITEM_1": "Facilitating and organizing effective interactions between members.",
+  "MISSION_LIST_ITEM_2": "Ensuring fast and reliable execution of each project, with strict adherence to international legal standards.",
+  "MISSION_LIST_ITEM_3": "Protecting the interests of our partners, ensuring transparent and secure collaborations.",
+   
+
+
+
+ 
+    
+    "MISSION_PARAGRAPH_INTRO": "At United Business Community, our mission is to achieve global excellence in facilitating partnerships and business growth. We are committed to:",
+    "MISSION_LIST_ITEM_4": "Fostering seamless global collaborations between businesses and institutions.",
+    "MISSION_LIST_ITEM_5": "Delivering innovative solutions tailored to the specific needs of our clients.",
+    "MISSION_LIST_ITEM_6": "Ensuring transparency and trust in every business interaction.",
+    "MISSION_LIST_ITEM_7": "Providing sustainable and scalable strategies for long-term success.",
+    "MISSION_LIST_ITEM_9": "Upholding the highest standards of international legal and ethical practices.",
   
+ 
+      "OUR_EXPORTS": "Development Sectors"
+
+    
+
+  
+  }
 

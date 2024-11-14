@@ -151,7 +151,7 @@ body, html {
 .intro-title,
 .section-heading {
   font-size: 2rem; /* Larger font size for titles */
-  color: #1a2343;
+  color: #48484b;
   margin: 10px 0; /* Margin for spacing */
   text-align: center;
   font-weight: bold; /* Bold headings */
@@ -231,81 +231,69 @@ body, html {
 }
 
 .export-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; /* Allows wrapping for responsive layout */
-  gap: 20px; /* Adds space between items */
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
 }
 
 .export-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  width: 30%; /* Adjusted width for three items per row */
-  max-width: 300px; /* Ensures consistent size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Ensuring square images */
 .export-image {
   width: 100%;
-  height: 400px; /* Set a fixed height */
-  object-fit: cover; /* Ensures image covers the box evenly */
-  transition: transform 0.3s ease;
+  aspect-ratio: 1 / 1; /* Makes the image a square */
+  object-fit: cover; /* Ensures the image covers the square without distortion */
+  border-radius: 10px; /* Optional: Rounded corners */
 }
 
-.export-item:hover .export-image {
-  transform: scale(1.1); /* Zoom effect on hover */
-}
-
+/* Overlay for Titles and Buttons */
 .export-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
 }
 
 .export-item:hover .export-overlay {
   opacity: 1; /* Show overlay on hover */
 }
 
-.export-icon {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 15px;
-}
-
 .export-title {
-  font-size: 2rem; /* Adjusted font size */
-  color: white;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase; /* Makes the text uppercase */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .learn-more-btn {
-  padding: 10px 20px;
-  background-color: #d4af37; /* Gold color */
+  background-color: #003366;
   color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .learn-more-btn:hover {
-  background-color: #b69430; /* Darker gold on hover */
+  background-color: #1e90ff;
 }
+
 
 
 /* last section */
@@ -898,3 +886,80 @@ body {
   display: block; /* Ensure there's no inline spacing */
 }
 
+
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px; /* Spacing before the export items */
+}
+
+.section-title h2 {
+  font-size: 2.5rem; /* Adjust font size */
+  color: #003366; /* Match your theme */
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.section-title p {
+  font-size: 1.2rem;
+  color: #666; /* Subtle gray for description */
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Styling for Titles */
+.section-heading,
+.vision-title,
+.consultation-title,
+.intro-title,
+.services-title,
+.statistics-title {
+  color: #586068; /* Blue color */
+  font-weight: bold;
+  font-size: 2rem; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  opacity: 1; /* Default to visible */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Glowing Effect */
+.section-heading.glowing,
+.vision-title.glowing,
+.consultation-title.glowing,
+.intro-title.glowing,
+.services-title.glowing,
+.statistics-title.glowing {
+  background: linear-gradient(90deg, #545658, #474a4d, #434546, #353638, #45484b);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing-effect 3s infinite linear;
+}
+
+@keyframes glowing-effect {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+
+
+
+/* Styling for the Export Section */

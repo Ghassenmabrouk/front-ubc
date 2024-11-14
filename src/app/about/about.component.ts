@@ -6,14 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  showMore1 = false;
-  showMore2 = false;
+  showMore1: boolean = false;
+  showMore2: boolean = false;
+  showMore3: boolean = false;
+  showMore4: boolean = false;
 
-  toggleReadMore(section: number) {
-    if (section === 1) {
-      this.showMore1 = !this.showMore1;
-    } else if (section === 2) {
-      this.showMore2 = !this.showMore2;
-    }
+  toggleReadMore(section: 'showMore1' | 'showMore2' | 'showMore3' | 'showMore4'): void {
+    this[section] = !this[section];
   }
 }
